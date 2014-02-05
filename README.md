@@ -10,7 +10,8 @@ Supported Honeypots:
 
 Author
 -------
-* [Fikri Fadzil](mailto:fikri.fadzil@impact-alliance.org) ([FikriFadzil](https://github.com/FikriFadzil/))
+* [Fikri Fadzil](mailto:fikri.fadzil@impact-alliance.org) ([GitHub](https://github.com/FikriFadzil/))
+* [Muhamad Ammar](mailto:ammar.aboobakar@impact-alliance.org)
 
 Forks
 -----

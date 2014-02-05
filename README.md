@@ -13,11 +13,6 @@ Author
 * [Fikri Fadzil](mailto:fikri.fadzil@impact-alliance.org) ([GitHub](https://github.com/FikriFadzil/))
 * [Muhamad Ammar](mailto:ammar.aboobakar@impact-alliance.org)
 
-Forks
------
-* [International Multilateral Partnership Against Cyber Threats (IMPACT), Malaysia](http://www.impact-alliance.org/)
-
-
 Installation
 ------------
 * git clone https://github.com/FikriFadzil/Bekas-Madoo.git
@@ -29,3 +24,7 @@ Installation
   * Copy /client folder to any location
   * Configure /client/configuration
   * run this - python bekasmadoo.py
+
+Support
+-----
+* [International Multilateral Partnership Against Cyber Threats (IMPACT), Malaysia](http://www.impact-alliance.org/)

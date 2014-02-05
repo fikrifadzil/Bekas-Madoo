@@ -1,16 +1,29 @@
 BekasMadoo
 ========
 
-[BekasMadoo](https://github.com/FikriFadzil/Bekas-Madoo) is a solution to centralize data from multiple honeypots into one database server.
+[BekasMadoo](https://github.com/FikriFadzil/Bekas-Madoo) is a solution to push data from multiple honeypots into one database server. In order to centralize the data, this solution consists of two applications.
+
+You are invited to add new plugins in order to support more honeypots and do not hesitate to commit for bugs fix.
+
+Supported Honeypots:
+* Glastopf
+
+Installation
+------------
+* git clone https://github.com/FikriFadzil/Bekas-Madoo.git
+* Settings - Central DB
+  * Restore bekasmadoo.sql
+  * Copy /server folder into the webserver
+  * Configure /server/global.php
+* Settings - Sensor
+  * Copy /client folder to any location
+  * Configure /client/configuration
+  * run this - python bekasmadoo.py
 
 Author
 -------
 * [Fikri Fadzil](mailto:fikri.fadzil@impact-alliance.org) ([FikriFadzil](https://github.com/FikriFadzil/))
 
-Support
+Forks
 -----
-* International Multilateral Partnership Against Cyber Threats - ([IMPACT](http://www.impact-alliance.org/))
-
-Installation
-------------
-* git clone https://github.com/FikriFadzil/Bekas-Madoo
+* [International Multilateral Partnership Against Cyber Threats (IMPACT), Malaysia](http://www.impact-alliance.org/)

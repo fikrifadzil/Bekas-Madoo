@@ -8,6 +8,15 @@ You are invited to add new plugins in order to support more honeypots and do not
 Supported Honeypots:
 * Glastopf
 
+Author
+-------
+* [Fikri Fadzil](mailto:fikri.fadzil@impact-alliance.org) ([FikriFadzil](https://github.com/FikriFadzil/))
+
+Forks
+-----
+* [International Multilateral Partnership Against Cyber Threats (IMPACT), Malaysia](http://www.impact-alliance.org/)
+
+
 Installation
 ------------
 * git clone https://github.com/FikriFadzil/Bekas-Madoo.git
@@ -19,11 +28,3 @@ Installation
   * Copy /client folder to any location
   * Configure /client/configuration
   * run this - python bekasmadoo.py
-
-Author
--------
-* [Fikri Fadzil](mailto:fikri.fadzil@impact-alliance.org) ([FikriFadzil](https://github.com/FikriFadzil/))
-
-Forks
------
-* [International Multilateral Partnership Against Cyber Threats (IMPACT), Malaysia](http://www.impact-alliance.org/)

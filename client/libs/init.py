@@ -40,22 +40,10 @@ def test_config():
 	
 	
 	try:
-		r = requests.get(config['api_url'] + '/test');
+		r = requests.get(config['api_url'] + '/json');
 		config['token'] = r.json['token']
 	except TypeError:
 		announce("FAIL", "The API url isn't correct!")
 		sys.exit(0)
-	
-	try:
-		mysql = MySQLdb.connect(config['local_db']['mysql']['host'],config['local_db']['mysql']['user'],config['local_db']['mysql']['pass'],config['local_db']['mysql']['name'])
-		mysql.close()
-	except Exception:
-		announce("FAIL", "Invalid MySQL authentication!")
-		sys.exit(0)
-		
-	if config['local_db']['sqlite']['path'] != "":
-		if not os.path.isfile(config['local_db']['sqlite']['path']):
-			announce("FAIL", "SQLite database doesn't exist!")
-			sys.exit(0)
 	
 	return config

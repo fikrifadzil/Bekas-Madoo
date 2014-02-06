@@ -8,15 +8,15 @@ from MySQLdb import converters
 
 def getcursor(config, dbms):
 	if dbms.lower() == "mysql":
-		dbcon = MySQLdb.connect(config['local_db']['mysql']['host'],config['local_db']['mysql']['user'],config['local_db']['mysql']['pass'],config['local_db']['mysql']['name'])
+		dbcon = MySQLdb.connect(config['host'],config['user'],config['pass'],config['name'])
 		return dbcon.cursor()
 		
 	if dbms.lower() == "sqlite":
-		dbcon = lite.connect(config['local_db']['sqlite']['path'])
+		dbcon = lite.connect(config['path'])
 		return dbcon.cursor()
 
 def select(config, query):
-	dbcon = MySQLdb.connect(config['local_db']['mysql']['host'],config['local_db']['mysql']['user'],config['local_db']['mysql']['pass'],config['local_db']['mysql']['name'])
+	dbcon = MySQLdb.connect(config['host'],config['user'],config['pass'],config['name'])
 	cursor = dbcon.cursor()
 	
 	try:
@@ -47,7 +47,7 @@ def select(config, query):
 	return data
 
 def delete(config, query):
-	dbcon = MySQLdb.connect(config['local_db']['mysql']['host'],config['local_db']['mysql']['user'],config['local_db']['mysql']['pass'],config['local_db']['mysql']['name'])
+	dbcon = MySQLdb.connect(config['host'],config['user'],config['pass'],config['name'])
 	cursor = dbcon.cursor()
 	
 	try:
@@ -58,9 +58,9 @@ def delete(config, query):
 	
 	dbcon.close()
 
-def knockknock(medium, json, config):
+def knockknock(medium, json, url):
 	data = {"medium": medium, "data":base64.b64encode(json)}
-	r = requests.post(config['api_url'] + '/index.php', data=data)
+	r = requests.post(url + '/index.php', data=data)
 	
 	print r.text
 	

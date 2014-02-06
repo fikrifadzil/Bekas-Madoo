@@ -7,6 +7,7 @@ You are invited to add new plugins in order to support more honeypots and do not
 
 Supported Honeypots:
 * Glastopf
+* Kippo
 
 Author
 -------

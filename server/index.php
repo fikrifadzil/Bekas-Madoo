@@ -17,8 +17,8 @@ if( isset($_POST['data']) && isset($_POST['medium']) ) {
 		if(count($temp) < 2) { get_off(); }
 		
 		
-		if ( file_exists( 'plugins/' . $temp[0] . '.php' ) ) {
-			require_once 'plugins/' . $temp[0] . '.php';
+		if ( file_exists( 'plugins/' . basename($temp[0]) . '.php' ) ) {
+			require_once 'plugins/' . basename($temp[0]) . '.php';
 			
 			$object = new $temp[0]();
 			

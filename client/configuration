@@ -1,14 +1,23 @@
 {
-    "api_url": "http://127.0.0.1/api/",
-    "local_db": {
-        "mysql": {
+    "api_url": "http://127.0.0.1/bekasmadoo/",
+    "honeypot": {
+        "glastopf": {
             "host": "localhost",
             "user": "root",
             "pass": "",
             "name": "honeyvast"
         },
-        "sqlite": {
-            "path": ""
+        "kippo": {
+            "host": "localhost",
+            "user": "root",
+            "pass": "",
+            "name": "honeyvast"
+        },
+        "kippo": {
+            "host": "localhost",
+            "user": "root",
+            "pass": "",
+            "name": "honeyvast"
         }
     }
 }

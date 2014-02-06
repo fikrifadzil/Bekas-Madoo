@@ -12,12 +12,6 @@
             "user": "root",
             "pass": "",
             "name": "honeyvast"
-        },
-        "kippo": {
-            "host": "localhost",
-            "user": "root",
-            "pass": "",
-            "name": "honeyvast"
         }
     }
 }

@@ -40,7 +40,7 @@ def test_config():
 	
 	
 	try:
-		r = requests.get(config['api_url'] + '/json');
+		r = requests.get(config['api_url'] + '/test');
 		config['token'] = r.json['token']
 	except TypeError:
 		announce("FAIL", "The API url isn't correct!")
